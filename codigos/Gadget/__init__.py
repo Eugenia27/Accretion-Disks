@@ -533,6 +533,10 @@ def read_block(filename, blockd, parttype=-1, physical_velocities=True, arepo=0,
     data_for_type[0] = True
     dt = np.dtype(np.float32)
     block_num = 68-blocksub
+  elif block=="EDYN":
+    data_for_type[0] = True
+    dt = np.dtype(np.float32)
+    block_num = 69-blocksub
 
 
 
